@@ -157,3 +157,8 @@ knots_pos_tbl %>%
   View()
 
 
+knots_pos_tbl %>%
+  filter(knot == 10) %>%
+  select(x, y) %>%
+  distinct() %>% nrow()
+
